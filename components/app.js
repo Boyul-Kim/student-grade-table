@@ -36,7 +36,6 @@ class App {
     this.gradeForm.onSubmit(this.createGrade);
   };
   createGrade(name, course, grade) {
-    console.log(name, course, grade);
     $.ajax({
       type: "POST",
       headers: { "X-Access-Token": "E2zmM6eF" },
